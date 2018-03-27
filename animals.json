@@ -1,0 +1,109 @@
+{
+    "animals": [
+        {
+            "name": "PANAMANIAN GOLDEN FROG",
+            "type": "Amphibian",
+            "number": "10",
+            "is Carnivore": true,
+            "imageURL":"https://www.speakcdn.com/assets/2147/12_golden-frog-katie-gregory.jpg"
+        },
+        {
+            "name": "AXOLOTL",
+            "type": "Amphibian",
+            "number": "5",
+            "is Carnivore": true,
+            "imageURL":"https://www.speakcdn.com/assets/2147/12_axolotl-web.jpg"
+        },
+        {
+            "name": "BLUE POISON ARROW FROG",
+            "type": "Amphibian",
+            "number": "7",
+            "is Carnivore": true,
+            "imageURL":"https://www.speakcdn.com/assets/2147/12_frogs.jpg"
+        },
+        {
+            "name": "CARIBBEAN FLAMINGO",
+            "type": "Bird",
+            "number": "20",
+            "is Carnivore": false,
+            "imageURL":"https://www.speakcdn.com/assets/2147/12_flamingo9.jpg"
+        },
+        {
+            "name": "HYACINTH MACAW",
+            "type": "Bird",
+            "number": "4",
+            "is Carnivore": false,
+            "imageURL":"https://www.speakcdn.com/assets/2147/12_hyacinthmacaw3-sq.jpg"
+        },
+        {
+            "name": "SNOWY OWL",
+            "type": "Bird",
+            "number": "2",
+            "is Carnivore": true,
+            "imageURL":"https://www.speakcdn.com/assets/2147/12_snowyowl1.jpg"
+        },
+        {
+            "name": "BLUE TANG SURGEON FISH",
+            "type": "Fish",
+            "number": "5",
+            "is Carnivore": false,
+            "imageURL":"https://www.speakcdn.com/assets/2147/12_blue-tang-surgeonfish.jpg"
+        },
+        {
+            "name": "BLUE TANG SURGEON FISH",
+            "type": "Fish",
+            "number": "5",
+            "is Carnivore": false,
+            "imageURL":"https://www.speakcdn.com/assets/2147/12_blue-tang-surgeonfish.jpg"
+        },
+        {
+            "name": "LINED SEAHORSE",
+            "type": "Fish",
+            "number": "7",
+            "is Carnivore": false,
+            "imageURL":"https://www.speakcdn.com/assets/2147/12_lined-seahorse.jpg"
+        },
+        {
+            "name": "CLOUDED LEOPARD",
+            "type": "Mammal",
+            "number": "4",
+            "is Carnivore": true,
+            "imageURL":"https://www.speakcdn.com/assets/2147/12_cloudedleopard7.jpg"
+        },
+        {
+            "name": "MEERKAT",
+            "type": "Mammal",
+            "number": "25",
+            "is Carnivore": false,
+            "imageURL":"https://www.speakcdn.com/assets/2147/12_meerkat5.jpg"
+        },
+        {
+            "name": "RED PANDA",
+            "type": "Mammal",
+            "number": "20",
+            "is Carnivore": false,
+            "imageURL":"https://www.speakcdn.com/assets/2147/12_redpanda4.jpg"
+        },
+        {
+            "name": "EMERALD TREE BOA",
+            "type": "Reptile",
+            "number": "1",
+            "is Carnivore": true,
+            "imageURL":"https://www.speakcdn.com/assets/2147/12_emerald-tree-boa-web.jpg"
+        },
+        {
+            "name": "GREEN CRESTED BASILISK",
+            "type": "Reptile",
+            "number": "2",
+            "is Carnivore": true,
+            "imageURL":"https://www.speakcdn.com/assets/2147/basilisk2-web.jpg"
+        },
+        {
+            "name": "MATA MATA",
+            "type": "Reptile",
+            "number": "1",
+            "is Carnivore": true,
+            "imageURL":"https://www.speakcdn.com/assets/2147/mata-mata-katie-gregory.jpg"
+        }
+    ]
+}
