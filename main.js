@@ -2,7 +2,7 @@ const printToDom = (domString, divId) => {
     document.getElementById(divId).innerHTML = domString;
   };
   
-  const buildDomString = (animalArray) => {
+const buildDomString = (animalArray) => {
     // console.log("animalArray", animalArray);
     let domString = "";
     animalArray.forEach((animal) => {
@@ -24,19 +24,40 @@ const printToDom = (domString, divId) => {
   };
   
 
-  const addEscapedEventListeners = () => {
+const addEscapedEventListeners = (e) => {
     const escapedButtons = document.getElementsByClassName('escaped')
     
     for(let i=0; i<escapedButtons.length; i++) {
         escapedButtons[i].addEventListener('click', animalEscaped)
     }
-    //   animalEscaped();
   };
-  const animalEscaped = () => {
+const animalEscaped = (e) => {
+      const badAnimalButtonContainer = e.target.parentNode;
       showCarnivores();
       showVegetables();
+      showFoundButton(badAnimalButtonContainer);
   }
-  const showCarnivores = () => {
+
+const showFoundButton = (buttonContainer) => {
+    buttonContainer.innerHTML = `<button id="found">Found</button>`;
+    initalizeFoundButton()
+};
+
+const initalizeFoundButton = () => {
+    const foundButton = document.getElementById("found");
+    foundButton.addEventListener('click', () => {
+        const animals = document.getElementsByClassName('animal')
+
+        for(let m=0; m<animals.length; m++) {
+            animals[m].children[3].innerHTML = '<button class="found">Found</button>';
+            animals[m].classList.remove('green');
+            animals[m].classList.remove('red');
+        }
+        addEscapedEventListeners();
+    })
+};
+
+const showCarnivores = () => {
     const carnivores = document.getElementsByClassName('carnivore');
     for(let j=0; j<carnivores.length; j++) {
         carnivores[j].children[3].innerHTML = '';
@@ -45,18 +66,16 @@ const printToDom = (domString, divId) => {
 };
 const showVegetables = () => {
     const vegetables = document.getElementsByClassName('vegetable');
-    for(let j=0; j<vegetables.length; j++) {
-        vegetables[j].children[3].innerHTML = '<button>EAT ME!!!!!</button>';
-        vegetables[j].classList.add('green');
+    for(let k=0; k<vegetables.length; k++) {
+        vegetables[k].children[3].innerHTML = '<button>EAT ME!!!!!</button>';
+        vegetables[k].classList.add('green');
     }
 };  
-
-
 function executeThisCodeIfXHRFails(){
     console.log("something went wrong");
   }
 
-  function executeThisCodeAfterFileLoaded (){
+function executeThisCodeAfterFileLoaded (){
     // console.log("executeThisCodeAfterFileLoaded", executeThisCodeAfterFileLoaded);
 //     console.log("this", this);
 //     console.log("this.responseText", this.responseText);
