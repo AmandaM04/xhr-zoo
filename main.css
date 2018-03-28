@@ -1,3 +1,31 @@
 body {
-    background: blue;
+    background: rgb(137, 137, 190);
 }
+
+
+#animal-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .animal {
+    margin: 1%;
+    padding: 2%;
+    width: 400px;
+    border: 2px solid slategray;
+    text-align: center;
+  }
+  
+  .animal-image{
+    width: 400px;
+  }
+
+  .red {
+      background-color: red;
+  }
+
+  .green {
+    background-color: green;
+}
+
